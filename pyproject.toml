@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diffsquares"
+version = "0.1.0"
+description = "Original square-and-triangle difference puzzles, with verified unique solutions"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+diffsquares = "diffsquares.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["diffsquares*"]
